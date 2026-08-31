@@ -14,6 +14,9 @@ supplied voice evidence and fails closed on factual or meaning drift. The App
 Store pair and voice-rewriter are on npm; the App Store pair also ships as
 GitHub Actions.
 
-First merged contribution: [getsentry/XcodeBuildMCP #456](https://github.com/getsentry/XcodeBuildMCP/pull/456), test coverage for SwiftUI tab identifier surfacing. Merged July 2026, so now I count it.
+First merged contribution: [getsentry/XcodeBuildMCP #456][xcodebuildmcp-456],
+test coverage for SwiftUI tab identifier surfacing. Merged July 2026.
+
+[xcodebuildmcp-456]: https://github.com/getsentry/XcodeBuildMCP/pull/456
 
 Site: [thechosenvictor.com](https://www.thechosenvictor.com/)
