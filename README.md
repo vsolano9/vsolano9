@@ -8,11 +8,13 @@ Store submission-preflight pair for fastlane `deliver` folders;
 [claimproof](https://github.com/vsolano9/claimproof), a macOS tool that reads
 screenshot text with Apple's Vision framework and checks it against app
 strings, including any price against an explicit `--price` value supplied by
-the user; and [voice-rewriter](https://github.com/vsolano9/voice-rewriter), a
+the user; [voice-rewriter](https://github.com/vsolano9/voice-rewriter), a
 Gemini-powered CLI and TypeScript library that rewrites posts and replies from
-supplied voice evidence and fails closed on factual or meaning drift. The App
-Store pair and voice-rewriter are on npm; the App Store pair also ships as
-GitHub Actions.
+supplied voice evidence and fails closed on factual or meaning drift; and
+[localeproof](https://github.com/vsolano9/localeproof), a zero-dependency
+linter that checks the locales an iOS app ships against the locales its App
+Store listing promises. The App Store pair, localeproof, and voice-rewriter
+are on npm; the App Store pair and localeproof also ship as GitHub Actions.
 
 First merged contribution: [getsentry/XcodeBuildMCP #456][xcodebuildmcp-456],
 test coverage for SwiftUI tab identifier surfacing. Merged July 2026.
