@@ -1,0 +1,34 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+secrets/
+.secrets/
+
+# --- Node / build ---
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+*.log
+
+# --- Worktrees ---
+.worktrees/
+
+# --- Agent tooling (public repo) ---
+.claude/
+.claude.json
+.codex/
+.cursor/
+.omp/
+AGENTS.md
+CLAUDE.md
+.mcp.json
