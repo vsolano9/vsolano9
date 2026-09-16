@@ -9,7 +9,7 @@ These tools check a [fastlane `deliver`](https://docs.fastlane.tools/actions/del
 | Tool | What it checks | Install |
 | --- | --- | --- |
 | [metaproof](https://github.com/vsolano9/metaproof) | Localized metadata text: required files, field length, ASO keyword field, URLs. Safe `--fix` for keyword separators and duplicates. | npm `metaproof@0.6.1`, Action `vsolano9/metaproof@v0.6.1` |
-| [screenproof](https://github.com/vsolano9/screenproof) | Screenshot and app-preview files: dimensions, format, counts, locale folders, video codec/duration/audio. | npm `screenproof@0.5.2`, Action `vsolano9/screenproof@v0.5.2` |
+| [screenproof](https://github.com/vsolano9/screenproof) | Screenshot and app-preview files: dimensions, format, counts, locale folders, video codec/duration/audio. | npm `screenproof@0.7.0`, Action `vsolano9/screenproof@v0.7.0` |
 | [localeproof](https://github.com/vsolano9/localeproof) | Locales the iOS app ships (`*.xcstrings`, `knownRegions`, `*.lproj`) versus locales the listing promises (`metadata/`, `screenshots/`). | npm `localeproof@0.1.0`, Action `vsolano9/localeproof@v0.1.0` |
 | [claimproof](https://github.com/vsolano9/claimproof) | What the screenshots **say**: Vision OCR versus String Catalogs, `.strings`, Swift literals, and an explicit `--price`. macOS only. | Clone + `swiftc`; not on npm |
 
@@ -17,7 +17,7 @@ The three Node tools are zero runtime dependencies, offline, and exit non-zero s
 
 ## Other public tools
 
-[voice-rewriter](https://github.com/vsolano9/voice-rewriter) (`voice-rewriter@0.1.1`) rewrites a post or reply from a user-supplied voice profile using Gemini (`gemini-flash-latest`, high reasoning). It fails closed on factual or meaning drift. It needs `GEMINI_API_KEY`. It does not research facts.
+[voice-rewriter](https://github.com/vsolano9/voice-rewriter) (`voice-rewriter@0.1.1`) rewrites a post or reply from a user-supplied voice profile using Gemini (`gemini-flash-latest`, high reasoning). It rejects rewrites when its checks detect factual or meaning drift. It needs `GEMINI_API_KEY`. It does not research facts.
 
 ## This repository
 
