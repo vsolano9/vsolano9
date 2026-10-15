@@ -6,7 +6,7 @@ I build iPhone apps and the small tools that make shipping them less painful, an
 
 **[limitbar](https://github.com/vsolano9/limitbar)** (v2.1.0). A Windows 11 taskbar widget that shows how much of your AI plan limits you have used: Claude Code, Codex, Grok and Cursor out of the box, plus any HTTP endpoint, script or file you point it at. One 0.6 MB native Rust exe, read-only with your existing sign-ins.
 
-**[heavy-gate](https://github.com/vsolano9/heavy-gate)** (v1.0.0). `heavy run -- cargo build` waits for a free slot and enough free RAM before it starts, so builds from parallel AI agent sessions on one machine start a few at a time instead of all at once. Windows, Linux and macOS, one small Rust binary, no service; it includes a Claude Code hook that blocks unwrapped builds.
+**[heavy-gate](https://github.com/vsolano9/heavy-gate)** (v1.0.1). `heavy run -- cargo build` waits for a free slot and enough free RAM before it starts, so builds from parallel AI agent sessions on one machine start a few at a time instead of all at once. Windows, Linux and macOS, one small Rust binary, no service; it includes a Claude Code hook that blocks unwrapped builds.
 
 **App Store submission preflight.** Four separate CLIs that check a [fastlane `deliver`](https://docs.fastlane.tools/actions/deliver/) tree, or the app sources behind it, before App Store Connect sees it. The three Node tools have no runtime dependencies, run offline and exit non-zero, so they can gate CI.
 
