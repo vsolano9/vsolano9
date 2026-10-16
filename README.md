@@ -8,6 +8,8 @@ I build iPhone apps and the small tools that make shipping them less painful, an
 
 **[heavy-gate](https://github.com/vsolano9/heavy-gate)** (v1.0.1). `heavy run -- cargo build` waits for a free slot and enough free RAM before it starts, so builds from parallel AI agent sessions on one machine start a few at a time instead of all at once. Windows, Linux and macOS, one small Rust binary, no service; it includes a Claude Code hook that blocks unwrapped builds.
 
+<!-- mcp-standby: lead (work-e0) fills this entry in once its public repo and release exist; do not link it before then. -->
+
 **App Store submission preflight.** Four separate CLIs that check a [fastlane `deliver`](https://docs.fastlane.tools/actions/deliver/) tree, or the app sources behind it, before App Store Connect sees it. The three Node tools have no runtime dependencies, run offline and exit non-zero, so they can gate CI.
 
 | Tool | What it checks | Install |
@@ -17,7 +19,7 @@ I build iPhone apps and the small tools that make shipping them less painful, an
 | [localeproof](https://github.com/vsolano9/localeproof) | Locales the app ships (`*.xcstrings`, `knownRegions`, `*.lproj`) against the locales the listing promises. | npm `localeproof@0.1.0`, Action `vsolano9/localeproof@v0.1.0` |
 | [claimproof](https://github.com/vsolano9/claimproof) | What the screenshots say: Vision OCR read back and compared with String Catalogs, `.strings`, Swift literals and your real price. macOS only. | Clone and build with `swiftc` (v0.1.1) |
 
-Also public: [agent-grid](https://github.com/vsolano9/agent-grid) (a macOS app with Codex, Claude, Grok and Cursor Agent terminals in one grid), [splat-walk](https://github.com/vsolano9/splat-walk) (a three.js WebGPU Gaussian splat explorer) and [voice-rewriter](https://github.com/vsolano9/voice-rewriter) (`voice-rewriter@0.1.1`, a fail-closed Gemini rewriter that rejects drafts whose facts or meaning drift).
+Also public: [agent-grid](https://github.com/vsolano9/agent-grid) ([v1.4.0](https://github.com/vsolano9/agent-grid/releases/tag/v1.4.0), a macOS app with Codex, Claude, Grok and Cursor Agent terminals in one grid that remembers your folder), [splat-walk](https://github.com/vsolano9/splat-walk) (a three.js WebGPU Gaussian splat explorer) and [voice-rewriter](https://github.com/vsolano9/voice-rewriter) (`voice-rewriter@0.1.1`, a fail-closed Gemini rewriter that rejects drafts whose facts or meaning drift).
 
 ## Upstream work
 
