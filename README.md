@@ -8,7 +8,7 @@ I build iPhone apps and the small tools that make shipping them less painful, an
 
 **[heavy-gate](https://github.com/vsolano9/heavy-gate)** (v1.0.1). `heavy run -- cargo build` waits for a free slot and enough free RAM before it starts, so builds from parallel AI agent sessions on one machine start a few at a time instead of all at once. Windows, Linux and macOS, one small Rust binary, no service; it includes a Claude Code hook that blocks unwrapped builds.
 
-<!-- mcp-standby: lead (work-e0) fills this entry in once its public repo and release exist; do not link it before then. -->
+**[mcp-standby](https://github.com/vsolano9/mcp-standby)** ([v1.0.0](https://github.com/vsolano9/mcp-standby/releases/tag/v1.0.0)). Keeps stdio MCP servers on standby: it answers `initialize` and the tool, prompt and resource lists from a cached manifest and starts the real server on the first call that needs it, so an idle server costs under 1 MB instead of a full Node or Python runtime. Windows, Linux and macOS, one small Rust binary, for Claude Code or any stdio MCP client.
 
 **App Store submission preflight.** Four separate CLIs that check a [fastlane `deliver`](https://docs.fastlane.tools/actions/deliver/) tree, or the app sources behind it, before App Store Connect sees it. The three Node tools have no runtime dependencies, run offline and exit non-zero, so they can gate CI.
 
